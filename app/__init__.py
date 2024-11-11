@@ -6,8 +6,8 @@ app = create_app()
 app.secret_key = 'my-secret'
 
 # Register Blueprints
-# from app.blueprints.sales import sales
-# app.register_blueprint(sales)
+from app.blueprints.sales import sales
+app.register_blueprint(sales)
 
 from . import routes
 
